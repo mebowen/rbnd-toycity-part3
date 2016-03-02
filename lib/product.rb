@@ -31,7 +31,7 @@ class Product
     def add_to_products
         product = self.class.find_by_title(@title)
         if product
-            raise DuplicateProductError, "This product has already been entered"
+            raise DuplicateProductError, "'#{title}' already exists."
         else
             @@products << self 
         end
