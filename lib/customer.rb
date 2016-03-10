@@ -1,4 +1,4 @@
-class Customer
+class Customer  
     attr_reader :name
     
     @@customers = [] 
@@ -10,6 +10,10 @@ class Customer
     
     def self.all
         @@customers
+    end
+    
+    def purchase(product)
+        Transaction.new(self, product)
     end
     
     private
