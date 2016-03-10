@@ -12,14 +12,23 @@ class Transaction
         add_to_transactions 
     end
     
+    def self.all
+        @@transactions
+    end
+    
+    private
+    
+    def self.find(id)
+        @@transactions.find {|p| p.id == id} 
+    end
+        
     def add_to_transactions
-        if @product.stock = 0 
-            raise OutOfStockError: "#{@product.title} is out of stock."
+        if @product.stock == 0 
+            raise OutOfStockError, "#{@product.title} is out of stock."
         else
-            @product.stock -= 1 
+            @product.reduce_stock 
             @@transactions << self 
         end
     end
-   
-    
 end
+
