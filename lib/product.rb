@@ -22,6 +22,10 @@ class Product
         @stock > 0 
     end
     
+    def reduce_stock
+        @stock -= 1
+    end
+    
     private 
     
     def self.find_by_title(title)
