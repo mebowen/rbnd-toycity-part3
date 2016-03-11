@@ -78,7 +78,7 @@ puts "Customers: "
 Customer.list.each do |customer| 
     puts customer.name 
 end 
-
+#outputs total stock value for inventory 
 puts Product.total_stock_value
 
 
