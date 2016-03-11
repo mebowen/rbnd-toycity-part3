@@ -18,12 +18,22 @@ class Product
         @@products.select {|p| p.in_stock?} 
     end
     
+    def self.list
+        @@products.sort_by(&:title)
+    end
+    
     def in_stock?
         @stock > 0 
     end
     
     def reduce_stock
         @stock -= 1
+    end
+    
+    def self.total_stock_value
+        @@products.reduce(0) do |sum, product|
+            sum + product.stock * product.price
+        end
     end
     
     private 
@@ -42,3 +52,4 @@ class Product
     end
     
 end
+
