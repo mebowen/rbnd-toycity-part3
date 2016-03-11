@@ -3,8 +3,6 @@ require_relative "lib/customer"
 require_relative "lib/product"
 require_relative "lib/transaction"
 
-puts "Hello world!"
-
 # PRODUCTS
 
 Product.new(title: "LEGO Iron Man vs. Ultron", price: 22.99, stock: 55)
