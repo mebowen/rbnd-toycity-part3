@@ -16,6 +16,10 @@ class Customer
         Transaction.new(self, product)
     end
     
+    def self.list
+        @@customers.sort_by(&:name)
+    end
+    
     private
     
     def self.find_by_name(name)
@@ -30,5 +34,4 @@ class Customer
             @@customers << self 
         end
     end
-    
 end
