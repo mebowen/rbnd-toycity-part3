@@ -1,0 +1,32 @@
+1. I really, really took my time with this project. I have been focusing a lot 
+of my attention on supplementing my  Udacity coursework at this time. I have been 
+reading David Black's "The Well-Grounded Rubyist," Flanagan and Matsumoto's 
+"The Ruby Programming Language," and Zed Shaw's "Learning Ruby the Hard Way." 
+Most of the code was pretty quick to write after I wrote product.rb, since 
+there were so many similarities between files. I did spend quite a few hours
+figuring out how to create my second new feature, though, which I will describe
+below:
+
+2. My biggest obstacle was adding a total_stock_value method in product.rb. 
+I had to research the reduce method in order to accomplish this, so that took 
+some time. Then, I got confused about the value this method was returning because
+I didn't realize that puts walter.purchase(nanoblock) was indeed creating a 
+second transaction. 
+
+3. I added a list method for products and customers so that each can be printed in
+alphabetical order. I added this method primarily because I wanted to figure out
+how to sort objects in the context of a project like this. It was tricky but I am
+glad that I figured it out. I also think it could be a useful feature for a program
+like this. I can imagine my boss would want to see a list of customers at some point,
+and I just added the feature to products for good measure. I added the
+total_stock_value method because I felt that this would be a useful feature since a 
+high return value indicates that we need to move more product off our shelves! 
+
+4. I think generally, I still have a long way to go with feeling confident while
+writing code. This project was a little better, but over all I have had this 
+pervasive "WHAT AM I DOING????" mentality while working on projects so far. I think
+reading supplementary materials as described above has helped me become more zen,
+and it's definitely been nice to utilize Slack when I am really stuck. 
+
+
+Thanks! 
